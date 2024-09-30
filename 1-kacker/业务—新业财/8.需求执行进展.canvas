@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"type":"group","label":"行字段取值逻辑","id":"42b3008954388866","x":1580,"y":-880,"width":1900,"height":1366,"color":"4"},
+		{"type":"text","text":"## 模型定义\n","id":"1b693a4c530a345d","x":-1387,"y":260,"width":887,"height":707,"color":"#dcacac"},
+		{"type":"text","text":"<mark class=\"hltr-pink\">采购下单退回</mark>或者<mark class=\"hltr-pink\">付款退回</mark>, 执行终止展示在最下","id":"a1c066317b3e8517","x":-260,"y":-460,"width":405,"height":60},
+		{"type":"file","file":"0-asset/需求执行进展头行图.png","id":"42b4bf8311fe4e26","x":420,"y":-880,"width":1102,"height":1365},
+		{"type":"text","text":"物料<mark class=\"hltr-pink\">是否需明确</mark>来确定第一个节点\n如需求关闭 -> 无行进展","id":"9d0991941a346de5","x":-260,"y":-323,"width":320,"height":60},
+		{"type":"text","text":"需求行不同<mark class=\"hltr-pink\">流程模式</mark>生成不同分支","id":"3d95260a9eb5ec52","x":-260,"y":-580,"width":320,"height":60},
+		{"type":"file","file":"0-asset/Pasted image 20230228183817.png","id":"005addbb4386281a","x":-1593,"y":-580,"width":1093,"height":780},
+		{"type":"text","text":"## 五大流程模式\n| 需求 -&gt; 付款                   | 自采业务, 采购执行在项目组内部                                                                                                                                                            |\n|:------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 需求 -&gt; 领用                   | 仓库出库申请                                                                                                                                                                      |\n| 需求 -&gt; 订单 -&gt; 验收          | 集中采购类, 统一对外采购支出                                                                                                                                                             |\n| 需求 -&gt; 订单 -&gt; 验收 -&gt; 领用 | 仓管的集采业务,&nbsp;<span style=\"font-size: 16px; background-color: var(--background-primary); color: var(--text-normal); font-family: var(--font-interface);\">如定制类非备库物料采购</span> |  ","id":"bc2ec054a9b7e6ce","x":-1320,"y":-900,"width":820,"height":260,"color":"5"},
+		{"type":"file","file":"0-asset/Pasted image 20230301101802.png","id":"03a35bce8f94db0d","x":420,"y":540,"width":1086,"height":663,"color":"5"},
+		{"type":"file","file":"0-asset/Pasted image 20230301110803.png","id":"f1e7d03ec8a47892","x":-2128,"y":1040,"width":1628,"height":480},
+		{"type":"file","file":"0-asset/Pasted image 20230302170450.png","id":"e8895b9980cf3bfd","x":420,"y":1260,"width":1170,"height":1027},
+		{"type":"file","file":"0-asset/Pasted image 20230301101822.png","id":"ea8ae02e60ae48b1","x":1560,"y":540,"width":1612,"height":663,"color":"5"},
+		{"type":"file","file":"0-asset/Pasted image 20230301104644.png","id":"179f96ac4bccf975","x":1600,"y":40,"width":640,"height":428},
+		{"type":"file","file":"0-asset/Pasted image 20230301104430.png","id":"dd8b62be79a846da","x":1600,"y":-520,"width":667,"height":522},
+		{"type":"file","file":"0-asset/Pasted image 20230301104447.png","id":"819cc9f951ad0e93","x":2320,"y":-520,"width":762,"height":522},
+		{"type":"file","file":"0-asset/Pasted image 20230301104412.png","id":"aeb0e34b8d4a9afc","x":1600,"y":-820,"width":667,"height":260},
+		{"type":"file","file":"0-asset/Pasted image 20230301104524.png","id":"c84ce0d99ba8c0e7","x":2320,"y":-815,"width":540,"height":251}
+	],
+	"edges":[
+		{"id":"6ff2790fb0acc3d7","fromNode":"005addbb4386281a","fromSide":"right","toNode":"3d95260a9eb5ec52","toSide":"left"},
+		{"id":"6f14b63ca654e085","fromNode":"005addbb4386281a","fromSide":"right","toNode":"a1c066317b3e8517","toSide":"left"},
+		{"id":"252c9846e498de0f","fromNode":"005addbb4386281a","fromSide":"right","toNode":"9d0991941a346de5","toSide":"left"}
+	]
+}

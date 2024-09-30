@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"a3f18091c582690c","x":-700,"y":-360,"width":620,"height":580,"type":"text","text":"## 分片集群\n![[Pasted image 20230323163710.png]]\n- 一般共有16384个哈希槽(hash solt)\n- 对key使用crc16算法, 结果对16384取模, 获取槽号\n- 槽自动或手动分配到不同的node种\n- redis-cli -h 172.16.19.3 –p 6379 cluster addslots 0,1"},
+		{"id":"47f90d28c0bce850","x":-40,"y":-360,"width":680,"height":580,"type":"text","text":"## why hash solt\n- 不采用key直接映射node, 而是中间加一层solt因为\n- key的数量可能很庞大导致映射表庞大\n- 客户端访问到某个node上无这个key, 需要MOVED响应(重定向), 节点间要相互交换路由表\n- 集群扩缩容时, 修改每个key的映射关系成本较高\n- 以哈希槽为单位, 轻量, 维护成本, 扩缩容低"}
+	],
+	"edges":[]
+}

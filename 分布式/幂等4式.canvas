@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 预申请token\n![[Pasted image 20230226023840.png|555]]\n- 申请token\n- 每次重发携带token, 缓存token和其处理结果\n- 如果处理结果是success, 每次同token的请求, 返回同token的结果\n```ad-tips\n如果是redis缓存token的话, 需要使用del(token)来验证是否存在\n- 如果是get(token), del(token), 高并发无法保证原子操作幂等\n- get和del使用lua脚本能保证原子性\n- ``\n```","id":"6dceb89c1cebc94b","x":-1300,"y":-940,"width":640,"height":527},
+		{"type":"text","text":"## 本地消息事件表\n![[Pasted image 20230226024708.png|555]]\n\n- 缓存msgId和第一次处理的结果到db\n- 后续根据msgId去查db获取","id":"50111437c4404361","x":-1300,"y":-349,"width":640,"height":273},
+		{"type":"text","text":"## redis幂等表\n![[Pasted image 20230226175713.png]]\n- setnx保证并发性","id":"c7150bb0a171c2da","x":-1260,"y":-40,"width":600,"height":340},
+		{"type":"text","text":"幂等 & 防重复提交区别\n- 幂等: 重复请求都是操作成功\n- 防重复: 第二次提示禁止重复提交","id":"dd02d5ec1f68777d","x":-560,"y":-833,"width":340,"height":120,"color":"3"},
+		{"type":"text","text":"- 1锁, 2判, 3更新\n- 高并发下加分布式锁或悲观锁控制请求\n- 判断幂等表或流水表是否存在幂等请求\n- 处理数据操作\n- 最后数据库唯一索引约束来兜底","id":"73c9d9f10daabf32","x":-560,"y":-680,"width":340,"height":140,"color":"4"},
+		{"type":"text","text":"幂等接口的四种方式","id":"3bf4df2106eb9558","x":-492,"y":-272,"width":204,"height":60,"color":"1"},
+		{"type":"text","text":"## 乐观锁\n\n- 保证对数据的影响只会触发一次\n- 通过update对version字段判断后的更新影响条数, ","id":"91c44e802cfa777f","x":-105,"y":160,"width":560,"height":120},
+		{"type":"text","text":"前端处理\n\n- POST-REDIRECT-GET(prg), 重定向\n- 禁用提交按钮","id":"58ad9f2ebffa9de7","x":-560,"y":-500,"width":340,"height":120,"color":"5"},
+		{"type":"text","text":"## db唯一索引\n```ad-tips\n如新增用户, 手机号唯一索引\n```\n```go\nID := \"PO01\" // ID生成器保证唯一  \no := &Order{ID}  \n  \nerr := dao.insert(o) // 保证该插入操作只执行一次  \nif err != nil && err == ErrExist {  \n   // 唯一索引, 插入失败  \n   return \"retcode: 0\"  \n}\n```","id":"e337c18547f697ad","x":-105,"y":-800,"width":560,"height":320},
+		{"type":"text","text":"## status字段\n- update order set status=3 where id=123 and status=2; \n- 第一次执行更新了状态值, 后续则不符合查询条件不会更新(适用于带有status字段, 且status要更新的场景)","id":"f7e0c73a654a3c1f","x":-105,"y":-456,"width":560,"height":153},
+		{"type":"text","text":"## 事务去重流水表\n- 每次接收请求判断是否已处理过, 使用唯一索引插入一条处理流水(防重复表)\n- 插入失败说明已经处理过, 防重复表和操作表要在同一个数据库, 使用事务保证原子性\n```ad-tips\n适用于业务中有唯一标识的插入场景, 如订单只能支付一次, 订单id作为这个支付操作的流水表唯一索引字段\n```","id":"a35f8d831bbdc03c","x":-105,"y":-272,"width":739,"height":272},
+		{"type":"text","text":"## 悲观锁\n- 事务中使用, for update, 注意字段要唯一索引, 否则锁表\n- 适用同一时刻保证绝对只有一个处理者","id":"2008a40f4689b72e","x":-102,"y":320,"width":502,"height":110},
+		{"type":"text","text":"## setNX\n- 如mq的重复消费, 把msgid用setnx控制, 存在就消费并删除","id":"cfc2724a94833042","x":-105,"y":20,"width":510,"height":110},
+		{"type":"text","text":"## 分布式锁\n```ad-quote\n适用于包含业务唯一id的操作, 唯一id上锁\n```","id":"e56c1c6be6ae2423","x":-1260,"y":345,"width":600,"height":175},
+		{"type":"file","file":"0-asset/Pasted image 20230328121100.png","id":"c43ed868db2d29e9","x":-560,"y":-1240,"width":651,"height":362}
+	],
+	"edges":[
+		{"id":"68680425e6a2e304","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"e337c18547f697ad","toSide":"left"},
+		{"id":"a0ccab4c97b28f07","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"f7e0c73a654a3c1f","toSide":"left"},
+		{"id":"c3998f83087a6e5b","fromNode":"3bf4df2106eb9558","fromSide":"left","toNode":"6dceb89c1cebc94b","toSide":"right"},
+		{"id":"8196cf5396a3f6a1","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"a35f8d831bbdc03c","toSide":"left"},
+		{"id":"be7c7a1025acbbff","fromNode":"3bf4df2106eb9558","fromSide":"left","toNode":"50111437c4404361","toSide":"right"},
+		{"id":"bb6301561d5c2212","fromNode":"3bf4df2106eb9558","fromSide":"left","toNode":"c7150bb0a171c2da","toSide":"right"},
+		{"id":"3068b02dfef817ff","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"cfc2724a94833042","toSide":"left"},
+		{"id":"1d2b55d499ed888d","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"91c44e802cfa777f","toSide":"left"},
+		{"id":"a9d92d816c0f709a","fromNode":"3bf4df2106eb9558","fromSide":"right","toNode":"2008a40f4689b72e","toSide":"left"},
+		{"id":"138f757d1711b90e","fromNode":"3bf4df2106eb9558","fromSide":"left","toNode":"e56c1c6be6ae2423","toSide":"right"}
+	]
+}

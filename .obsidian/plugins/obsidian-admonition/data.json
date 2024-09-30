@@ -1,0 +1,171 @@
+{
+  "userAdmonitions": {
+    "go": {
+      "type": "go",
+      "color": "118, 163, 51",
+      "icon": {
+        "type": "obsidian",
+        "name": "code-glyph"
+      },
+      "command": true,
+      "title": "code",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "bug": {
+      "type": "bug",
+      "color": "255, 5, 5",
+      "icon": {
+        "type": "octicons",
+        "name": "bug"
+      },
+      "command": false,
+      "title": "warn",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "tips": {
+      "type": "tips",
+      "color": "150, 48, 197",
+      "icon": {
+        "type": "obsidian",
+        "name": "quote-glyph"
+      },
+      "command": false,
+      "title": "tips",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "three": {
+      "type": "three",
+      "color": "33, 37, 41",
+      "icon": {
+        "type": "obsidian",
+        "name": "number-list-glyph"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "primary": {
+      "type": "primary",
+      "color": "13, 110, 253",
+      "icon": {
+        "type": "octicons",
+        "name": "pin"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "grey": {
+      "type": "grey",
+      "color": "108, 117, 125",
+      "icon": {
+        "type": "octicons",
+        "name": "code-review"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "success": {
+      "type": "success",
+      "color": "26, 135, 84",
+      "icon": {
+        "type": "obsidian",
+        "name": "checkmark"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "danger": {
+      "type": "danger",
+      "color": "220, 53, 69",
+      "icon": {
+        "type": "obsidian",
+        "name": "reset"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "two": {
+      "type": "two",
+      "color": "255, 192, 8",
+      "icon": {
+        "type": "obsidian",
+        "name": "number-list-glyph"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "one": {
+      "type": "one",
+      "color": "17, 202, 240",
+      "icon": {
+        "type": "obsidian",
+        "name": "number-list-glyph"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "list": {
+      "type": "list",
+      "color": "5, 67, 72",
+      "icon": {
+        "type": "octicons",
+        "name": "number"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "ov": {
+      "type": "ov",
+      "color": "255, 0, 0",
+      "icon": {
+        "type": "rpg",
+        "name": "explosive-materials"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": true,
+  "copyButton": false,
+  "version": "9.0.5",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [
+    "rpg",
+    "octicons"
+  ],
+  "useFontAwesome": false,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.0957f1"
+}

@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "9f6c5075433598b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "96ba11294377be88",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "算法/1-leetcode/1-题解/167.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ad3cc34da312a49",
+    "type": "split",
+    "children": [
+      {
+        "id": "b12de4fef7fba36e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fbc2d12e1a6bcd0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f7c6d1830286b5b6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "24b9a70b3af3b2b0",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315.5
+  },
+  "right": {
+    "id": "6e721b532b6285c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc2e65da05e7aab2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bb50856db1cca89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "算法/1-leetcode/1-题解/167.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "195c2290f281a3d4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "算法/1-leetcode/1-题解/167.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "254a8dfeed0e6b4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "算法/1-leetcode/1-题解/167.md"
+              }
+            }
+          },
+          {
+            "id": "54e26e578d3af8e9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "06d51caa70156e30",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "算法/1-leetcode/1-题解/167.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0750737421162972,
+                  "close": false
+                }
+              }
+            }
+          },
+          {
+            "id": "96d31aad2bf631c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39c24ed23d59682c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 358,
+    "collapsed": true
+  },
+  "active": "96ba11294377be88",
+  "lastOpenFiles": [
+    "算法/1-leetcode/1-题解/167.md",
+    "tools/markdown.md",
+    "tools/obsidian.md",
+    "算法/1-leetcode/双指针.md",
+    "算法/排序/未命名.md",
+    "算法/排序/基础排序.md",
+    "算法/排序/冒泡排序.md",
+    "算法/排序/选择排序.md",
+    "1-kacker/日记/2022-10-11.md",
+    "2022-W41.md"
+  ]
+}

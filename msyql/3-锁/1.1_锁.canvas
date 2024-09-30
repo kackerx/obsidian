@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 幻读\n> 一个事务, 前后两次查询出现了新增的行\n\n- 可重复读下, 一般查询都是<mark class=\"hltr-pink\">快照读</mark>, 看不到别人的数据, 因此只有<mark class=\"hltr-pink\">当前读</mark>会出现幻读\n\n- 幻读仅指新插入的行, insert操作被看到才是幻读","id":"5c5e2851026fc504","x":-720,"y":-460,"width":461,"height":195},
+		{"type":"text","text":"## 锁的规则\n- 前开后闭\n- 过程中访问的到的对象才会加锁\n- 索引等值查询: 唯一索引加锁的时候, next-key lock = 行锁\n- 索引等值查询: 右遍历且最后一个值不满足等值条件时, next-key lock = 间隙锁\n- 唯一索引上的范围查询会访问到不满足条件的第一个值为止\n\n\n","id":"a5cba04f16b221a2","x":-220,"y":-460,"width":660,"height":580},
+		{"type":"text","text":"![[Pasted image 20230314170046.png]]\n- 锁住已存在的数据时, 如果在间隙insert数据还是会幻读\n- 所以需要<mark class=\"hltr-pink\">gap lock</mark>才能避免幻读\n- 加锁的基本单位是<mark class=\"hltr-pink\">next-key lock</mark>, 前开后闭区间","id":"df78c8217cf2ec27","x":-720,"y":-220,"width":461,"height":340},
+		{"type":"text","text":"mysql靠MVCC解决事务的脏读, 不可重复读, 幻读问题\n靠锁解决多事务对同一数据的脏写问题\n![[Pasted image 20230321174624.png]]\n- 事务A先到, 加锁, 等待状态为false\n- 事务B后到, 加锁(生成锁结构), 等待状态为true\n- A执行完毕, 释放锁, 唤醒B, B的等待状态改为true","id":"86a999d8ff6b38de","x":-720,"y":-940,"width":461,"height":440},
+		{"type":"text","text":"## 当前读\n- 对于左侧可见性来说, 只是读的操作, 如果是写操作, 还是要在最新值上去做的\n- 更新数据都是先读, 后写, 这个读只能读当前值(current read)\n- <mark class=\"hltr-pink\">update语句</mark>和<mark class=\"hltr-red\">select加锁</mark>, 都是当前读\n- 如果这个update时, 其他事务未commit, 会阻塞等待其他事务释放锁\n\n\n<mark class=\"hltr-green\">当前读就是加锁或者写入时读取最新记录</mark>\n\n## 独占(x)和共享(s)\n- 更新数据必然加独占锁(x)\n- 查询时默认不加锁, 走MVCC进行快照读\n- 查询可以手动加共享锁(s), <mark class=\"hltr-pink\">lock in share mode</mark>, 此时不能写但可以读(读写锁)\n- 查询也可以手动加互斥锁<mark class=\"hltr-pink\">for update</mark>, 表明我查出来后要更新, 独占锁了","id":"c05114a19e8b2c1e","x":-220,"y":-940,"width":660,"height":440}
+	],
+	"edges":[]
+}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"d43391922a9ad420","x":-727,"y":-160,"width":667,"height":600,"type":"text","text":"## LIST\n\n![[Pasted image 20230324115356.png]]\n\n<mark class=\"hltr-pink\">lpush mq 5</mark>\nbrpop保证空队列不用轮询请求, 同时还可以放入备份的列表保证消息的可靠性\n<mark class=\"hltr-orange\">brpoplrush mq mqback </mark>\n"},
+		{"id":"ddea5e38a6a484c5","x":-727,"y":-417,"width":667,"height":217,"type":"file","file":"0-asset/Pasted image 20230324115122.png"},
+		{"id":"e05211fb7511ad63","x":0,"y":-440,"width":540,"height":240,"type":"text","text":"## 消息队列\n\n```ad-example\n- 消息保存\n- 重复消息处理\n- 消息可靠性\n```"},
+		{"id":"e6b9520ec1300a87","x":0,"y":-160,"width":540,"height":600,"type":"text","text":"## streams\n\n"}
+	],
+	"edges":[]
+}

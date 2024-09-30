@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"type":"text","text":"![[Pasted image 20230331142045.png]]\n---\n![[Pasted image 20230331182739.png]]","id":"702132bd57246526","x":-540,"y":-500,"width":1180,"height":1060},
+		{"id":"5e4c8033e9d59837","type":"text","text":"## 名词\n\n- TM: 事务管理器, 协调资源和管理事务, 控制全局事务, 管理事务的生命周期\n- AP: 使用DTP(data tools platform)的应用程序\n- RM: 资源管理器, DBMS或者消息服务器管理系统或文件系统, AP通过RM对资源进行控制, 资源必须实现XA接口\n- TX: 应用与事务管理器的接口\n- XA: RM与TM的接口, 在事务管理器TM和多个资源管理器RM之间作为通信桥梁, TM一般使用XA二阶段协议与RM(数据库)交互\n- 2PC: XA用于TM协调多个RM的资源的机制\n- BASE: BA(基本可用), S(软状态), E(最终一致性)\n- CAP: CP(强一致性mysql), AP(可用性/弱一致性)\n- DTP: distributed transaction process -> 分布式事务处理","x":600,"y":-100,"width":920,"height":300}
+	],
+	"edges":[]
+}

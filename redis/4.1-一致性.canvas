@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 旁路缓存(cache aside)\n\n![[Pasted image 20230327173212.png|555]]\n- 两种情况都可能不一致, 但是由于写缓存比写库更快, 所以先更新的话不一致概率较低\n- 适合读多写少的场景, 否则会频繁的重写缓存, 降低命中率\n\n## 两种方案提高命中率降低不一致性\n- 更新数据时更新缓存, 只是更新缓存前+分布式锁, 保证同一时间只有一个进程更新缓存\n- 更新数据时更新缓存, 给缓存较短的过期时间, 短期的不一致数据","id":"e3e4a52db25c0ad2","x":-740,"y":-460,"width":680,"height":740},
+		{"type":"file","file":"0-asset/先删后更新的不一致.png","id":"d00b4fe9be84dc9b","x":61,"y":-460,"width":459,"height":314},
+		{"type":"file","file":"0-asset/先更新后删的不一致.png","id":"f8acacc8912336da","x":61,"y":-60,"width":467,"height":320},
+		{"type":"text","text":"## 读穿/写穿(read/write through)\n\n![[Pasted image 20230327175009.png|555]]\n- 应用只和缓存交互, 不再和数据库交互, 由缓存组件和数据库交互\n- read\n\t- 缓存不命中, 缓存去读db, 写入缓存并返回\n- write\n\t- 缓存命中, 更新缓存, 同步更新db\n\t- 缓存不命中, 更新db返回","id":"c2d4f4c45b946185","x":-740,"y":320,"width":1268,"height":960},
+		{"type":"text","text":"## write back(写回)\n\n```ad-tip\n更新数据只更新缓存, 同时设置数据为脏的, 立马返回, 后期再随机异步批量更新到db(落盘)\n- 如db的buffer pool机制, redo log机制\n- 消息队列的异步写入磁盘\n```\n\n- 适合写多的场景, 但不是强一致性的, 浏览量点赞量等的","id":"509d31cd4c60e47f","x":580,"y":320,"width":740,"height":300}
+	],
+	"edges":[
+		{"id":"3fb4e0bef45af97c","fromNode":"e3e4a52db25c0ad2","fromSide":"right","toNode":"d00b4fe9be84dc9b","toSide":"left"},
+		{"id":"6394b97a5f290322","fromNode":"e3e4a52db25c0ad2","fromSide":"right","toNode":"f8acacc8912336da","toSide":"left"}
+	]
+}

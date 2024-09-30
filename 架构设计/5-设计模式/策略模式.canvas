@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 策略模式\n定义一类算法族, 每个算法分别封装, 可以相互替换, <mark class=\"hltr-pink\">解耦策略的定义, 创建, 使用</mark>","id":"2169b9159684b193","x":-287,"y":-162,"width":347,"height":122},
+		{"type":"file","file":"0-asset/Pasted image 20230302234340.png","id":"bcd1b73a5515a2d0","x":-440,"y":100,"width":753,"height":530},
+		{"type":"file","file":"0-asset/Pasted image 20230302234302.png","id":"c52db663f5e259a6","x":-313,"y":-445,"width":400,"height":85},
+		{"type":"file","file":"0-asset/Pasted image 20230302234319.png","id":"f7da20f8344ea828","x":240,"y":-380,"width":370,"height":400},
+		{"type":"text","text":"FBI的flow就是策略模式应用\n- 搭配工厂模式使用, 工厂用于创建","id":"d61e187f1ad9e8e0","x":-540,"y":-300,"width":320,"height":100,"color":"1"},
+		{"type":"text","text":"```ad-go\n~~~go\n这里工厂模式使用map缓存算法类, 查表法\n也可以使用slice, 也是查表法\ns []AlgRange\nfor alg := s {\n\tif alg.typ == \"a\" {\n\t\t strategy = alg.getStrategy()\n\t\t break\n\t}\n}\nstrategy.algo() // 具体策略\n```","id":"f0f943af5675ccda","x":145,"y":60,"width":560,"height":360,"color":"5"}
+	],
+	"edges":[
+		{"id":"a8d3458fc93d4328","fromNode":"2169b9159684b193","fromSide":"top","toNode":"c52db663f5e259a6","toSide":"bottom"},
+		{"id":"2b517b467e15eef5","fromNode":"2169b9159684b193","fromSide":"right","toNode":"f7da20f8344ea828","toSide":"left"},
+		{"id":"79add52eeb909dfc","fromNode":"2169b9159684b193","fromSide":"bottom","toNode":"bcd1b73a5515a2d0","toSide":"top"}
+	]
+}

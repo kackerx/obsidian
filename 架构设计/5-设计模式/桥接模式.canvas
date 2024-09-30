@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"type":"text","text":"```ad-tip\n- 将抽象和实现解耦, 使他们可以独立变化\n- 通过组合替代继承, 一个类存在多个变化的维度, 让每个维度可以独立扩展\n```","id":"b5fabbc18831e243","x":-700,"y":-460,"width":600,"height":180},
+		{"type":"text","text":"- 比如jdbc和各种db的driver\n- jdbc不管底层的驱动是mysql还是orical\n- 抽象了他们共同的接口, 组合去用不同的driver","id":"ddb2cd3d4ab7a06e","x":-700,"y":-240,"width":600,"height":340}
+	],
+	"edges":[]
+}

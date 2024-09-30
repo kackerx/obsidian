@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## XA\n- X/Open组织定义的DTP标准\n- 描述了TM和RM之间的接口\n- 主要使用2PC协调所有的RM同时提交或者回滚\n```ad-tips\n从prepare -> commit -> rollback, TM一直把持锁, 存在长事务风险\n注意, 不管是XA, 还是tcc, 在try阶段, 需要预留资源, 期间其他人不能操作(XA会在第一阶段将相关资源加锁)\n```","id":"dffa53d8e74a19b7","x":-700,"y":-440,"width":680,"height":340,"color":"5"},
+		{"type":"text","text":"## 实现\n### 2PC(标准实现)\n- 阶段一(prepare): \n\t- 事务询问TM(协调者)向RM(参与者)发送事务内容, 询问是否可以提交, 等待参与者响应\n\t- 执行本地事务, 将Undo和Redo操作计入本地日志\n\t- 响应TM, yes or no\n- 阶段二(commit/rollback): 事务提交或中断\n\t- 所有参与者yes -> tm向rm发送commit请求, rm反馈tm的发送ack反馈执行结果, tm全部ack后完成事务\n\t- 部分参与者no或超时 -> tm向rm们发送rollback请求, rm反馈tm, ack结果, 完成事务的中断\n\n![[Pasted image 20230331151910.png|555]]","id":"f4890a175e60b372","x":20,"y":-440,"width":820,"height":860},
+		{"type":"text","text":"## 实现\n### 3PC\n![[Pasted image 20230331153247.png|555]]\n- 拆分2PC为3个阶段\n- 3PC相比2PC更加的乐观, 由于有了第一次的can问询, 在commit阶段没有及时收到tm的信息会默认commit","id":"7ed7d972a819f526","x":880,"y":-440,"width":820,"height":440},
+		{"type":"text","text":"## XA各阶段处理\n![[Pasted image 20230331145915.png]]","id":"b3ad3f0b14414a23","x":-700,"y":-80,"width":680,"height":500}
+	],
+	"edges":[]
+}

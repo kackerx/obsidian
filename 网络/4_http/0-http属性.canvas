@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"type":"text","text":"## Keep-Alive & Content-Length\n\n### keep-alive\n- 实现tcp的复用, 避免一来一回一个tcp连接\n- 连接数有限, 所以服务端会有一个Keep-Alive timeout参数, 一段时间连接没新请求就关闭\n\n### content-length\n- 连接不关闭, 怎么知道何时请求处理结束, 或者说客户端怎么知道这次请求的数据包是否完整\n- http-resp头部的content-length告知多少个字节接收完毕\n\n### Transfer-Encoding: chunked\n- 服务端数据动态生成的话难以计算content-length\n- 该属性告诉客户端响应的body分块间隔符, 特殊标记结尾发送\n![[Pasted image 20230406142954.png]]","id":"fb317cfbf56e6a2b","x":-740,"y":-436,"width":720,"height":636},
+		{"id":"9ec9584464acda86","x":20,"y":-436,"width":760,"height":636,"type":"text","text":"## 断点续传\n\n```ad-tips\n客户端一边下载一边记录已下数量的字节数大小, \n重连后在请求的头部加上Range: first offset - last offset\n指定从某个偏移到某个偏移之间的数据\n```\n"}
+	],
+	"edges":[]
+}

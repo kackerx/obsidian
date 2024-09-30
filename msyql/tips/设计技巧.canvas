@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 命名\n索引: <mark class=\"hltr-pink\">ix</mark>\\_user_name, <mark class=\"hltr-pink\">ux</mark>\\_account","id":"a47de85414af3114","x":-800,"y":-480,"width":335,"height":232},
+		{"type":"text","text":"## 类型选择\n- 字符串固定或区别不大char, 否则varchar\n- 是否字段, bit\n- 枚举字段, tinyint\n- 主键, bigint\n- 金额, decimal\n- 时间, timestamp, <mark class=\"hltr-pink\">datetime</mark>","id":"c638398996a5232a","x":-420,"y":-480,"width":640,"height":232},
+		{"type":"text","text":"## 索引\n- 存其他表的id, 给其添加索引, key `ix_ty_id` (`ty_id`)\n- 单表索引个数不要超过5个\n- 建议两三个联合索引去覆盖表的查询\n- 联合索引范围查询只有第一个范围用得上索引, 后面的范围就无序了\n- not in和<>无法使用索引\n\n## 原则\n- where, order, group的字段设置联合索引, 最左侧字段原则\n- 区分度基数低的(枚举值很少), 无法快速二分查找, 就别索引了\n- 对于较长的字符串, 如varchar(255), 全部索引占空间, 可以<mark class=\"hltr-pink\">key name_idx(name(20), age)</mark>前缀索引但此时order, group失效\n- 尽量选择主键自增, 因为这样频繁的插入不会导致页的分裂\n- 频繁查询的, 但基数低的如城市, 省份性别, 放到联合索引的最左侧, 通过索引树过滤\n- <mark class=\"hltr-pink\">where city=xx and sex in (1, 2) and age >= xx</mark>, 联合索引经常范围查询的放到最后, 及时条件没有sex导致不匹配最左原则, 也可以通过sex in (全部枚举)来用上该索引\n- 低基数字段筛选+评分排序场景, 设计类似(sex, score)的辅助索引快速定位到一大片低基数字段对应的数据, 按照索引顺序去limit","id":"5048eb80174c1b32","x":-800,"y":-200,"width":1020,"height":500}
+	],
+	"edges":[]
+}

@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"bd06b571cadf7090","x":629,"y":-503,"width":934,"height":848,"type":"group","label":"付款中心"},
+		{"id":"fe6eb4c32da84e9d","x":-488,"y":-370,"width":859,"height":736,"type":"group","label":"采购管理"},
+		{"id":"58aeb29e59243d55","x":590,"y":-1192,"width":801,"height":575,"type":"group","label":"flow"},
+		{"id":"fe8b5a499c758471","x":-201,"y":-1016,"width":701,"height":513,"type":"group","label":"需求申请"},
+		{"id":"e9d5d29cc02e502d","x":686,"y":-259,"width":246,"height":60,"type":"text","text":"发起付款 - 选择后付还是预付"},
+		{"id":"6903e5779a316c35","x":957,"y":-392,"width":250,"height":60,"type":"text","text":"预付单/ADV"},
+		{"id":"045f076c324ebf08","x":-163,"y":-926,"width":250,"height":60,"type":"text","text":"发"},
+		{"id":"851b1752c632393e","x":617,"y":-1148,"width":250,"height":244,"type":"text","text":"- 需求申请 -> 发起1000块\n- 订单下单 -> 下单500块\n- 订单验收 -> 验收300块\n- 订单退货 -> 退货100块\n- 阿第三方"},
+		{"id":"77101f8846dca95a","x":957,"y":-130,"width":250,"height":60,"type":"text","text":"后付单/SI"},
+		{"id":"8232b612c327d7c5","x":-474,"y":7,"width":250,"height":60,"type":"text","text":"采购中心, 发起后付"},
+		{"id":"0f693c799d9c4547","x":145,"y":-934,"width":250,"height":60,"type":"text","text":""},
+		{"id":"42de20e154b75780","x":145,"y":-740,"width":250,"height":60,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"a6ca97c8c02b96a8","fromNode":"e9d5d29cc02e502d","fromSide":"right","toNode":"6903e5779a316c35","toSide":"left"},
+		{"id":"8986ef447c4878e9","fromNode":"e9d5d29cc02e502d","fromSide":"right","toNode":"77101f8846dca95a","toSide":"left"}
+	]
+}

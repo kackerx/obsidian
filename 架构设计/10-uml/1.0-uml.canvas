@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 依赖\n![[Pasted image 20230324160457.png]]\n- human ..> food\n\n```ad-tips\n偶然的, 临时的, 相对较弱的关系\n```","id":"b0b7c0bc617fd39b","x":-680,"y":360,"width":360,"height":620},
+		{"type":"text","text":"## 关联\n![[Pasted image 20230324160532.png]]\n- 0..1: 0个或1个\n- 0..\\*: 无限制\n- 1: 只能一个\n- 1..\\*: 至少一个\n- zoo --> monky\n\n```ad-tips\n比依赖更强的依赖, 不是临时性的, 而是长期的稳定的, 相对平等的关系\n```","id":"5ebd48e9e3df437b","x":-280,"y":360,"width":400,"height":620},
+		{"type":"text","text":"## 泛化和实现\n\n![[Pasted image 20230324160306.png]]\n- son --|> father\n- 继承父类\n\n![[Pasted image 20230324160328.png]]\n- human ..|> read\n- 实现接口","id":"bb762c7eeb2ac1bd","x":80,"y":-460,"width":640,"height":780},
+		{"type":"text","text":"## 聚合和组合\n\n```ad-tips\n聚合中, 整体和部分相互独立, 组合中, 整体包含一个个个体, 共享啊生命周期\n```\n\n- 聚合: 关系松散, 空心, 如房间 -> 沙发, 桌子, 床, 属于has-a\n- room o-- desktop\n\n\n![[Pasted image 20230324161133.png]]\n- 组合: 关系紧密, 实心, 如桌子 -> 桌子腿, 属于contain-a, 分析个体类独立存在是否有意义\n- Person \\*-- brain\n![[Pasted image 20230324160242.png]]","id":"9b0c98bb0525e22f","x":-680,"y":-580,"width":720,"height":900}
+	],
+	"edges":[]
+}

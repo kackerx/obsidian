@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 哨兵进程所做的事情\n![[Pasted image 20230323150128.png]]","id":"aae72cf6a73bab69","x":-660,"y":-400,"width":540,"height":240},
+		{"id":"0963dcdfe943d77c","x":-660,"y":-120,"width":540,"height":360,"type":"text","text":"## 监控\n![[Pasted image 20230323150431.png]]\n- 哨兵给node去ping, 如果响应失败则判断主观下线\n- 如果是从库响应失败直接标记主观下线\n- 如果是主库响应失败, 避免哨兵的网络问题, 则需哨兵集群多个哨兵实例都判断主库下线, 才能标记主库确实客观下线, 触发<mark class=\"hltr-pink\">选主</mark>"},
+		{"id":"f870770cb67b3e5c","x":-80,"y":-400,"width":600,"height":440,"type":"text","text":"## 选主\n![[Pasted image 20230323150944.png]]\n- 1, 通过筛选网络状况较好的从库\n- 2, 过slave-priority配置项定义从库优先级\n- 3, 同步程度最高的从库<mark class=\"hltr-pink\">slave_repl_offset</mark>值最大\n- 4, node的id号最小的, 以上综合打分选定新主"},
+		{"id":"a2f6ea11226f6712","x":-80,"y":80,"width":600,"height":460,"type":"text","text":"## 哨兵集群\n![[Pasted image 20230323151729.png]]\n- <mark class=\"hltr-pink\">sentinel monitor master-name ip port quorum</mark>\n- 如上命令即可配置哨兵集群, 哨兵节点间通过pub/sub机制订阅主库消息频道\n- 任何一个哨兵实例自身判断『主库下线』, 然后多哨兵进行『leader选举』"}
+	],
+	"edges":[]
+}

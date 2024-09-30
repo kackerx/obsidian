@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"d5241ab75e3824d7","x":-840,"y":-600,"width":440,"height":200,"type":"text","text":"## 提炼函数\n- 如果一段代码需要注释来说明, 那么值得<mark class=\"hltr-pink\">106: 抽取</mark>\n\n- 庞大的switch函数每个case都值得<mark class=\"hltr-pink\">106: 抽取</mark>\n\n- 循环应该做<mark class=\"hltr-pink\">106: 抽取</mark>\n\n-  "},
+		{"id":"a6f3fe0bbbcd35f5","x":-340,"y":-600,"width":540,"height":200,"type":"text","text":"## 参数列表\n- 如果参数过多, 其中一个可以用另一个或者计算得来, <mark class=\"hltr-pink\">314: 查询取代参数</mark>\n\n- 或者使用Option类聚合参数字段\n\n- 数据泥团: 多个类中相同的字段, 多个函数相同的参数, <mark class=\"hltr-pink\">182: 提炼类</mark>\n\n- "},
+		{"id":"7117854d15bb9f2e","x":240,"y":-600,"width":540,"height":220,"type":"text","text":""}
+	],
+	"edges":[]
+}

@@ -1,0 +1,69 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiKey",
+      "LiGitlab",
+      "LiAtom",
+      "LiEgg",
+      "LiAlignEndVertical"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "emojiStyle": "native",
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false
+  },
+  "0-asset": "FabAmilia",
+  "1-kacker": "FabKaggle",
+  "读书笔记": "RiBook2Fill",
+  "分布式": "FabBilibili",
+  "算法": "FabArtstation",
+  "网络": "Fab500px",
+  "云原生": "FabCloudversify",
+  "elasticsearch": "FabEtsy",
+  "kafka": "FabKorvue",
+  "mongodb": "FabMonero",
+  "msyql": "FabCloudsmith",
+  "redis": "FabRavelry",
+  "tools": "FabBity",
+  "helloworld.md": "FabChrome",
+  "安卓逆向": "FabCentos",
+  "汇编": "FabDeezer",
+  "安卓正向": "FabAndroid",
+  "记忆": "RiMediumFill",
+  "架构设计": "RiBook2Fill",
+  "编程志异": "RiCodeSSlashLine",
+  "编程语言": "LiLanguages",
+  "大数据": "LiDatabaseZap",
+  "前端开发": "LiAtom",
+  "DevOps": {
+    "iconName": "LiGitlab",
+    "iconColor": "#eca469"
+  },
+  "envoy": "LiAlignEndVertical",
+  "go": "LiEgg",
+  "0-all_in_one": {
+    "iconName": "LiKey",
+    "iconColor": "#e01010"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "recentFiles": [
+    {
+      "basename": "lancet",
+      "path": "go/第三方库/lancet.md"
+    },
+    {
+      "basename": "0_第三方库",
+      "path": "python/第三方库/0_第三方库.md"
+    },
+    {
+      "basename": "1_执行计划",
+      "path": "编程小记/mysql/1_执行计划.md"
+    },
+    {
+      "basename": "tview",
+      "path": "go/第三方库/tview.md"
+    },
+    {
+      "basename": "1.flow",
+      "path": "1-kacker/业务—新业财/1.flow.canvas"
+    },
+    {
+      "basename": "2_流程",
+      "path": "1-kacker/业务—新业财/2_流程.md"
+    },
+    {
+      "basename": "1_业务理解_新业财",
+      "path": "1-kacker/业务—新业财/1_业务理解_新业财.md"
+    },
+    {
+      "basename": "1.1_entity",
+      "path": "1-kacker/业务—新业财/1.1_entity.canvas"
+    },
+    {
+      "basename": "json-iterator",
+      "path": "go/第三方库/json-iterator.md"
+    },
+    {
+      "basename": "lo",
+      "path": "go/第三方库/lo.md"
+    },
+    {
+      "basename": "copier",
+      "path": "go/第三方库/copier.md"
+    },
+    {
+      "basename": "责任链模式",
+      "path": "设计模式/责任链模式.canvas"
+    },
+    {
+      "basename": "Pasted image 20230224110343",
+      "path": "0-asset/Pasted image 20230224110343.png"
+    },
+    {
+      "basename": "未命名",
+      "path": "设计模式/未命名.md"
+    },
+    {
+      "basename": "gomock",
+      "path": "go/第三方库/gomock.md"
+    },
+    {
+      "basename": "reset",
+      "path": "编程小记/git/reset.md"
+    },
+    {
+      "basename": "0_git",
+      "path": "编程小记/git/0_git.md"
+    },
+    {
+      "basename": "0_面试",
+      "path": "go/面试题/0_面试.md"
+    },
+    {
+      "basename": "规范实践",
+      "path": "编程小记/杂谈/规范实践.md"
+    },
+    {
+      "basename": "tips",
+      "path": "编程小记/git/tips.md"
+    },
+    {
+      "basename": "0_设计模式",
+      "path": "设计模式/0_设计模式.md"
+    },
+    {
+      "basename": "5.设计原则",
+      "path": "软件设计/软件设计之美/5.设计原则.md"
+    },
+    {
+      "basename": "mapstructure",
+      "path": "go/第三方库/mapstructure.md"
+    },
+    {
+      "basename": "0_第三方库",
+      "path": "go/第三方库/0_第三方库.md"
+    },
+    {
+      "basename": "函数式",
+      "path": "编程小记/go/函数式.md"
+    },
+    {
+      "basename": "4.如何设计一个对象",
+      "path": "软件设计/软件设计之美/4.如何设计一个对象.md"
+    },
+    {
+      "basename": "3.如何分析一个软件的接口",
+      "path": "软件设计/软件设计之美/3.如何分析一个软件的接口.md"
+    },
+    {
+      "basename": "restful",
+      "path": "编程小记/杂谈/restful.md"
+    },
+    {
+      "basename": "0_概念",
+      "path": "编程小记/迷幻概念/0_概念.md"
+    },
+    {
+      "basename": "web工程化名词",
+      "path": "编程小记/迷幻概念/web工程化名词.md"
+    },
+    {
+      "basename": "2.如何分析一个软件的模型",
+      "path": "软件设计/软件设计之美/2.如何分析一个软件的模型.md"
+    },
+    {
+      "basename": "1.了解一个软件的设计",
+      "path": "软件设计/软件设计之美/1.了解一个软件的设计.md"
+    },
+    {
+      "basename": "0_软件设计之美",
+      "path": "软件设计/软件设计之美/0_软件设计之美.md"
+    },
+    {
+      "basename": "0_软件设计",
+      "path": "软件设计/0_软件设计.md"
+    },
+    {
+      "basename": "模版方法",
+      "path": "设计模式/模版方法.md"
+    },
+    {
+      "basename": "建造者模式",
+      "path": "设计模式/建造者模式.md"
+    },
+    {
+      "basename": "原型模式",
+      "path": "设计模式/原型模式.md"
+    },
+    {
+      "basename": "工厂模式",
+      "path": "设计模式/工厂模式.md"
+    },
+    {
+      "basename": "代理模式",
+      "path": "设计模式/代理模式.md"
+    },
+    {
+      "basename": "装饰模式",
+      "path": "设计模式/装饰模式.md"
+    },
+    {
+      "basename": "阅读收藏",
+      "path": "1-kacker/看板/阅读收藏.md"
+    },
+    {
+      "basename": "4_forupdate锁",
+      "path": "编程小记/mysql/4_forupdate锁.md"
+    },
+    {
+      "basename": "5.4_订单验收",
+      "path": "1-kacker/业务—新业财/5.4_订单验收.svg"
+    },
+    {
+      "basename": "rebase",
+      "path": "编程小记/git/rebase.md"
+    },
+    {
+      "basename": "merge_rebase",
+      "path": "编程小记/git/merge_rebase.md"
+    },
+    {
+      "basename": "commit",
+      "path": "编程小记/git/commit.md"
+    },
+    {
+      "basename": "穿透击穿和雪崩",
+      "path": "1-kacker/看板/0_kanban/穿透击穿和雪崩.md"
+    },
+    {
+      "basename": "Java Lambda解析",
+      "path": "1-kacker/看板/0_kanban/Java Lambda解析.md"
+    },
+    {
+      "basename": "好用不教的sql",
+      "path": "1-kacker/看板/0_kanban/好用不教的sql.md"
+    },
+    {
+      "basename": "day_planner",
+      "path": "1-kacker/计划/day_planner.md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null
+}

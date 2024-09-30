@@ -1,0 +1,20 @@
+{
+  "theme": "moonstone",
+  "interfaceFontFamily": "Monaco",
+  "translucency": true,
+  "cssTheme": "AnuPpuccin",
+  "monospaceFontFamily": "Maple Mono SC NF,Hack Nerd Font Mono,Maple Mono",
+  "accentColor": "#468b83",
+  "nativeMenus": true,
+  "showViewHeader": false,
+  "textFontFamily": "Maple Mono,Hack Nerd Font Mono",
+  "baseFontSize": 12,
+  "enabledCssSnippets": [
+    "预览模式优化-空白行-行间距",
+    "dashboard",
+    "custom-admonitions.0957f1",
+    "notion-cards",
+    "floating-search-bar",
+    "extended-colorschemes"
+  ]
+}

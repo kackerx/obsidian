@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"7d78c84ca83a7a5c","x":-269,"y":-571,"width":406,"height":326,"type":"file","file":"go/标准库/AST/ast.md"},
+		{"id":"ac25bf9d255c4335","x":-485,"y":-141,"width":250,"height":208,"type":"text","text":"### GenDecl\n\n- ==type==: 类型声明\n- ==var==: 变量声明\n- ==const==: 常量声明\n- ==import==: 引入声明"},
+		{"id":"6f711344bb3f5b35","x":110,"y":-112,"width":256,"height":151,"type":"text","text":"### FuncDecl\n\n- Doc: 方法文档\n- Recv: 方法接收器\n- Name: 方法名\n- Type: 方法签名"}
+	],
+	"edges":[
+		{"id":"199e424db4f8a959","fromNode":"ac25bf9d255c4335","fromSide":"top","toNode":"7d78c84ca83a7a5c","toSide":"bottom"},
+		{"id":"2a38bb36c083d1b6","fromNode":"6f711344bb3f5b35","fromSide":"top","toNode":"7d78c84ca83a7a5c","toSide":"bottom"}
+	]
+}

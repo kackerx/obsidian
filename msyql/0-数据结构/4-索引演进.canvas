@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"type":"text","text":"![[Pasted image 20230305190628.png]]\n- B树, 单个节点包含多个数据和指针域\n- 解决了一定的树的平衡问题, 但是\n- 对于范围查找, 要往回查","id":"85af1ac77877930c","x":20,"y":-800,"width":600,"height":300},
+		{"type":"file","file":"0-asset/BST.png","id":"567f62d623c4d77f","x":-840,"y":-800,"width":400,"height":323},
+		{"type":"file","file":"0-asset/AVL.png","id":"e20c1be017160dfc","x":-840,"y":-260,"width":400,"height":301},
+		{"type":"text","text":"![[Pasted image 20230305190925.png]]\n- 数据只在叶子节点, 且叶子节点之间指针相连, 聚簇索引每个叶子节点包含全量数据\n- 如果, 根节点>2的去59页找, >9的去70页去找","id":"bff2e1beee778204","x":20,"y":-340,"width":740,"height":500},
+		{"type":"text","text":"查找算法","id":"c616fec6c9ff107b","x":-260,"y":-420,"width":120,"height":60},
+		{"type":"text","text":"![[Pasted image 20230311143230.png]]","id":"07a8d8002f32adde","x":800,"y":-560,"width":1400,"height":820},
+		{"type":"text","text":"## 演进\n- 数据页太多, 需要根据数据页的最小主键+页号搞出来一个主键目录\n![[Pasted image 20230321185018.png|555]]\n\n- 如果数据页过多, 主键目录放不下, 就需要把主键目录也放到数据页里, 更高层次的索引主键目录数据页","id":"ee48f8be7403c921","x":-840,"y":160,"width":780,"height":520}
+	],
+	"edges":[
+		{"id":"7f1872783c14dd88","fromNode":"c616fec6c9ff107b","fromSide":"left","toNode":"e20c1be017160dfc","toSide":"right"},
+		{"id":"0ea276a36dd9df1b","fromNode":"c616fec6c9ff107b","fromSide":"left","toNode":"567f62d623c4d77f","toSide":"right"},
+		{"id":"251a09b856283e18","fromNode":"c616fec6c9ff107b","fromSide":"right","toNode":"85af1ac77877930c","toSide":"left"},
+		{"id":"f37dd9f08297c192","fromNode":"c616fec6c9ff107b","fromSide":"right","toNode":"bff2e1beee778204","toSide":"left"},
+		{"id":"cabf6cb1fba5c366","fromNode":"bff2e1beee778204","fromSide":"right","toNode":"07a8d8002f32adde","toSide":"left"}
+	]
+}

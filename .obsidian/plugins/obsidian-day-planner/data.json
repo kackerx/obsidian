@@ -1,0 +1,20 @@
+{
+  "customFolder": "Day Planners",
+  "mode": 1,
+  "mermaid": true,
+  "notesToDates": [
+    {
+      "notePath": "1-kacker/日记/2022-12-13_星期二.md",
+      "date": "Tue Dec 13 2022"
+    },
+    {
+      "notePath": "1-kacker/日记/2022-12-31_星期六.md",
+      "date": "Sat Dec 31 2022"
+    }
+  ],
+  "completePastItems": true,
+  "circularProgress": true,
+  "nowAndNextInStatusBar": true,
+  "showTaskNotification": true,
+  "timelineZoomLevel": 4
+}

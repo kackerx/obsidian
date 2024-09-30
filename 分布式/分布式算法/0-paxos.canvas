@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"2efcca69de7869eb","x":-600,"y":-480,"width":840,"height":600,"type":"text","text":"## 角色\n![[Pasted image 20230407193722.png]]\n- Proposer提议者: 提议一个值用于投票, 接收到客户端请求的节点才是<mark style=\"background: #FFB8EBA6;\">提议者</mark>, 收到请求后发起二阶段进行共识\n- Acceptor接受者: 对提议的值投票, 并存储接受的值\n- Learner学习者: 被告知投票的结果, 接收共识并保存, 不参与投票, 一般来说是<mark style=\"background: #FFB8EBA6;\">备份节点Slave</mark>\n"}
+	],
+	"edges":[]
+}

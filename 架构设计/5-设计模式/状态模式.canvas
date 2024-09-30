@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 查表法\n- 状态(state), 事件(event), 动作(action)\n- 只需操作transitionTable(状态转移二维表)和actionTable(动作表)\n\n### 比如下表的状态表\ntransitionTable = { \n\t{SUPER, CAPE, FIRE, SMALL}, \n\t{SUPER, CAPE, FIRE, SMALL}, \n\t{CAPE, CAPE, CAPE, SMALL}, \n\t{FIRE, FIRE, FIRE, SMALL} \n}\n\nactionTable = { \n\t{+100, +200, +300, +0}, \n\t{+0, +200, +300, -100},\n\t{+0, +0, +0, -200}, \n\t{+0, +0, +0, -300} \n};\n\n","id":"8c2bcf15e7c5a607","x":-680,"y":-660,"width":576,"height":502},
+		{"type":"text","text":"## 状态机模式\n- 状态(state), 事件(event), 当前状态触发具体事件进行什么处理(action)\n- 将状态(state)接口化, 模块化, 将具体的<mark class=\"hltr-pink\">entity</mark>从复杂的逻辑中抽离出来, 实体依赖一个Stete的实现\n- 各种状态类的事件方法, 执行的动作就是更新entity所依赖的state和一些其他的action\n- entity只是持有state, 如何响应事件, 处理动作, 由state对象去处理","id":"235cc504a3083e45","x":-20,"y":-660,"width":800,"height":502},
+		{"type":"file","file":"0-asset/Pasted image 20230315111550.png","id":"41abe77b004a3805","x":-773,"y":-120,"width":669,"height":220},
+		{"id":"c2800b72949c49b4","x":-20,"y":-120,"width":800,"height":301,"type":"file","file":"0-asset/Pasted image 20230320111722.png"}
+	],
+	"edges":[]
+}

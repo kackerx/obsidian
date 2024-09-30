@@ -1,0 +1,515 @@
+{
+  "main": {
+    "id": "9f6c5075433598b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "dbd1debe68527a3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a93119dd68899c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/2.4-mysql_Innodb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "484e630e82dcb398",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/2.1-mysql_原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1230124ef64d68d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "云原生/0_运行时/0_docker/0.3.2_runcommannd.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f37f651459179e14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/5.3-cache_redis_一致性.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c9965d98b4bbea3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1-kacker/简历.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "13f478e4706ecbbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/3-二叉树.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f80258babafbdd21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "算法/1-leetcode/101_对称二叉树.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21f94c3dfd6baca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/9.1.1-网络_http_问题.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dbfafec19a58b0e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/10.0.1-工程架构_软件建模.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0817206e24d91c87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/3.9-DDD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b221cfa3ac39328",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17cd8ce718fbc643",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "架构设计/10-uml/1.0-uml.canvas",
+                "viewState": {
+                  "x": -80.48784962149982,
+                  "y": 530.8276889789487,
+                  "zoom": -0.05664951272261977
+                }
+              }
+            }
+          },
+          {
+            "id": "9e9e55b9f55f3175",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "架构设计/10-uml/1.1-puml.canvas",
+                "viewState": {
+                  "x": -310,
+                  "y": -180,
+                  "zoom": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "65ccd1d9fa52ace3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构设计/10-uml/<大象UML>/3.0_参与者.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31db37701c5d4f48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构设计/10-uml/<大象UML>/2.0_建模.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "277cd71edc6b1f76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构设计/10-uml/<编程的逻辑>/2.3_时序图.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef06b390ee47def7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构设计/10-uml/<编程的逻辑>/2.0_类关系图.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4fa96f33136bf86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/10.0.0-工程架构_设计模式和原则.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 10
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ad3cc34da312a49",
+    "type": "split",
+    "children": [
+      {
+        "id": "b12de4fef7fba36e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fbc2d12e1a6bcd0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "24b9a70b3af3b2b0",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "6795d50f0cc1e198",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "189369f114ff3278",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 335
+  },
+  "right": {
+    "id": "6e721b532b6285c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc2e65da05e7aab2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54e26e578d3af8e9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "06d51caa70156e30",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0750737421162972,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "96d31aad2bf631c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Entrypoint",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7dda654b23dfd22c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ac6a260c6aeeaae3",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dafe918dded9e30",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "5b40de8b5feacb85",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "d8fc34f23a383d12",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md"
+              }
+            }
+          },
+          {
+            "id": "8b178046ef970a18",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f2c63c118130d172",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 408.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-spaced-repetition:复习卡片": false,
+      "omnisearch:Omnisearch": false,
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "privacy-glasses:Hide all": false,
+      "privacy-glasses:Reveal non-private": false,
+      "privacy-glasses:Reveal all": false
+    }
+  },
+  "active": "5b221cfa3ac39328",
+  "lastOpenFiles": [
+    "架构设计/1-book/Go With The Domain/2-整洁架构.md",
+    "0-all_in_one/10.1.0-工程架构_整洁架构-六边形架构.md",
+    "0-all_in_one/3.9-DDD.md",
+    "0-all_in_one/10.0.1-工程架构_软件建模.md",
+    "0-all_in_one/10.0.0-工程架构_设计模式和原则.md",
+    "0-asset/Pasted image 20240930104450.png",
+    "0-asset/Pasted image 20240930102342.png",
+    "0-asset/Pasted image 20240930100951.png",
+    "0-all_in_one/12.3-设计模式.md",
+    "架构设计/10-uml/<编程的逻辑>/2.0_类关系图.md",
+    "架构设计/10-uml/<编程的逻辑>/2.3_时序图.md",
+    "架构设计/10-uml/<大象UML>/2.0_建模.md",
+    "架构设计/10-uml/<大象UML>/3.0_参与者.md",
+    "架构设计/10-uml/1.1-puml.canvas",
+    "架构设计/10-uml/1.0-uml.canvas",
+    "0-asset/Pasted image 20240930092824.png",
+    "0-all_in_one/12.2-结构型.md",
+    "0-all_in_one/12.1-行为型.md",
+    "0-all_in_one/0.1-面试/4-ES.md",
+    "0-all_in_one/9.1.1-网络_http_问题.md",
+    "0-asset/Pasted image 20240929230634.png",
+    "0-asset/Pasted image 20240929230420.png",
+    "0-asset/Pasted image 20240929230237.png",
+    "0-asset/Pasted image 20240929225707.png",
+    "0-asset/Pasted image 20240929225450.png",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/3-二叉树.md",
+    "1-kacker/简历.md",
+    "0-all_in_one/5.3-cache_redis_一致性.md",
+    "0-asset/Pasted image 20240929114410.png",
+    "0-all_in_one/2.4-mysql_Innodb.md",
+    "0-all_in_one/2.1-mysql_原理.md",
+    "0-all_in_one/19.5.4-go.md",
+    "0-all_in_one/1.3.0-go_数据结构.md",
+    "算法/1-leetcode/92_逆序部分链表.md",
+    "0-all_in_one/1.5.0-go_面试.md",
+    "0-all_in_one/20.0.0-面试_go1.md",
+    "0-all_in_one/9.1.0-网络_http.md",
+    "0-all_in_one/5.6-cache_缓存模块设计.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode",
+    "0-all_in_one/0.1-面试",
+    "0-all_in_one/0.0-记忆",
+    "0-all_in_one",
+    "编程志异/0_one/0.0-记忆",
+    "编程志异/0_one/0-记忆",
+    "msyql/3-锁/1.1_锁.canvas",
+    "编程志异/1_开源项目",
+    "编程志异/0_one",
+    "msyql/0-数据结构/1-buffer_pool和表空间.canvas",
+    "msyql/0-数据结构/4-索引演进.canvas",
+    "分布式/分布式事务/1-分布式事务/3.2.1-补偿型_TCC.canvas",
+    "redis/4-一致性.canvas",
+    "分布式/分布式事务/1-分布式事务/2.1-强一致_XA.canvas",
+    "分布式/分布式事务/1-分布式事务/2.2-强一致_seata.AT.canvas",
+    "分布式/分布式事务/0-事务分类图解.canvas",
+    "架构设计/1-book/Go With The Domain",
+    "架构设计/9-DDD/落地DDD"
+  ]
+}

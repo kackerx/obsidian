@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"ce6129d629e268a1","x":-560,"y":-420,"width":720,"height":740,"type":"text","text":"## 主动推送方式\n\n- 轮询\n- websocket\n- http长轮询\n\t- 没有新消息服务器夯住此连接, 客户端一直等待返回\n\t- 过了约定时间客户端关闭连接, 再发起新的连接重复此过程\n- http streaming\n\t- 利用Transfer-Encodeing: chunked机制, 发送没有结束标记的chunked流"}
+	],
+	"edges":[]
+}

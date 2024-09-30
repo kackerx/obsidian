@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"type":"group","id":"89821dd1919a9004","x":-580,"y":-1240,"width":560,"height":740,"label":"索引优化"},
+		{"type":"text","text":"## 如何更好判断索引是否生效\n\n- 从左到右, 依次判断当前一个索引字段确定顺序后, 后一个字段是否无序的\n\t- idx_1 in (1, 2) and idx_2 = 2;\n\t- 不行原因是1和2排序后, idx_2无序\n\t- 只有idx_1相同时idx_2才有序\n\t- 但是5.6以后<mark class=\"hltr-pink\">索引下推</mark>, 会去根据第一个字段的索引过滤的结果再去筛选idx_2, 减少回表的数量\n- ","id":"6c1ff1206e94a9dd","x":-1300,"y":-760,"width":635,"height":260},
+		{"type":"text","text":"## 松散索引扫描\n![[Pasted image 20230305215010.png|555]]\n- skip scan -> 联合索引先使用idx_1的索引然后跳着扫描idx_2","id":"88c717ac331bdc4c","x":-1410,"y":-1240,"width":745,"height":438},
+		{"type":"text","text":"select和where使用覆盖索引","id":"fd055586a5275b08","x":-541,"y":-1220,"width":270,"height":60},
+		{"type":"text","text":"字段使用函数会索引失效, 想办法替换","id":"789c563d91256cd6","x":-541,"y":-1120,"width":321,"height":60},
+		{"type":"text","text":"字符串和数字比较, 会将字符串转换为数字\nf1 = 6 -> cast(f1 as int) = 6","id":"0a7a42ebb85de2af","x":-541,"y":-1021,"width":381,"height":81}
+	],
+	"edges":[]
+}

@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"type":"text","text":"对扩展开放, 对修改关闭","id":"7b3e561aeb93ad3a","x":-660,"y":-360,"width":220,"height":60,"color":"1"},
+		{"id":"abdcd0e7cda22a09","x":-420,"y":-560,"width":740,"height":640,"type":"text","text":"## ov\n![[Pasted image 20230308230938.png]]\n- A不想被B的修改所影响, 就要让B依赖于A, 如上图\n- biz层entities不想被不同的db层修改所影响, 就要让db层依赖于biz的接口(<mark class=\"hltr-pink\">依赖倒置</mark>)"}
+	],
+	"edges":[]
+}

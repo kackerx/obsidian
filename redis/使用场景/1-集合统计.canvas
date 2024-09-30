@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"5e6a7b13f9d89089","x":-651,"y":-318,"width":511,"height":538,"type":"text","text":"## 聚合统计: 交并差\n```ad-example\n统计每天的新增用户, 和第二天的留存用户\n```\n\n- user -> 累计用户key\n- user:20230527 -> 前一天新增用户\n- user:20230528 -> 当天新增用户\n\n---\n\n- 并集进入累计用户\n<mark class=\"hltr-grey\">sunionstore user user user:20230527</mark>\n- 新当天用户和累计用户的差集是增量用户\n<mark class=\"hltr-blue\">sdiffstore user:new user user:20230528</mark>\n- 两天的交集是留存用户\n<mark class=\"hltr-purple\">sinterstore user:rem user:20230527 user:20230528</mark>"},
+		{"id":"f9bb85d1959079e3","x":-651,"y":260,"width":511,"height":180,"type":"text","text":"## 排序统计\n- 一个文章key对应一个评论list或评论zset\n- 使用list的lpush插入头部, lrange art 0 2(翻页场景麻烦)\n- 或者最好使用zset, 给每个元素添加一个权重\n- 使用zrangebyscore comments 0-9 0"},
+		{"id":"1eeca3ba16832ded","x":-100,"y":-318,"width":580,"height":758,"type":"text","text":"## 二值统计\n```ad-example\n要么1要么0, 使用bitmap位图, 节省大量的空间\n```\n\n- 统计用户id3000, 在2022年2月, 的第二天的的登录情况\n<mark class=\"hltr-pink\">setbit uid:sign:3000:202202 1 1</mark>\n\n- 获取那天是否登录签到\n<mark class=\"hltr-grey\">getbit uid:sign:3000:202202 1</mark>\n\n- 统计八月份的签到数\n<mark class=\"hltr-grey\">bitcount uid:sign:3000:202202</mark>\n--- \n![[Pasted image 20230324110310.png]]\n- 统计一亿用户, 10天连续签到的数量\n- 按日为key, 每一位的下标是uid, 十个key按位与操作, 最后集合bitcount\n\n```go\n\n```"},
+		{"id":"1c262064c8ff9bf9","x":520,"y":-318,"width":600,"height":758,"type":"text","text":"## 基数统计\n\n```ad-example\n去重后的个数, \n考虑使用set, 或者更省内存但不完全精准的hyperloglog\n```\n\n<mark class=\"hltr-pink\">pfadd page1:uv user1 user2 user3</mark>\n<mark class=\"hltr-pink\">pfcount page1:uv</mark>\n"}
+	],
+	"edges":[]
+}

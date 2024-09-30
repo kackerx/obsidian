@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"2faad82237b5cad6","x":-501,"y":-325,"width":621,"height":505,"type":"text","text":"## 快照(snapshot)模式\n\n```ad-tips\n利用一个snapshot类, 保存对象的数据, 利用snapshotHolder保存快照的栈\n- 正常操作先入栈快照, 然后操作实际对象\n- undo操作, 出栈快照, 实例对象赋值快照\n```"}
+	],
+	"edges":[]
+}

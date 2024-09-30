@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"type":"text","text":"需求预付","id":"1c747284af83bb96","x":-298,"y":-275,"width":100,"height":50},
+		{"type":"text","text":"需求付款","id":"2bce0521a7ffb11d","x":-9,"y":-310,"width":250,"height":60},
+		{"type":"text","text":"订单预付","id":"487d1d6861cd8df4","x":-298,"y":42,"width":100,"height":50},
+		{"type":"text","text":"验收&退货付款","id":"a1db9aa14bab42eb","x":-9,"y":42,"width":169,"height":50},
+		{"type":"text","text":"新建付款申请单","id":"d61cb025f6bd78d7","x":-150,"y":-120,"width":141,"height":50},
+		{"id":"1d271cc17a417a19","x":-620,"y":-183,"width":260,"height":225,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"5cc1241925cf22f7","fromNode":"d61cb025f6bd78d7","fromSide":"top","toNode":"1c747284af83bb96","toSide":"bottom"},
+		{"id":"ca0f4a2f6e5ff092","fromNode":"d61cb025f6bd78d7","fromSide":"top","toNode":"2bce0521a7ffb11d","toSide":"bottom"},
+		{"id":"489d7efa59cff177","fromNode":"d61cb025f6bd78d7","fromSide":"bottom","toNode":"487d1d6861cd8df4","toSide":"top"},
+		{"id":"17a9cc481fff8012","fromNode":"d61cb025f6bd78d7","fromSide":"bottom","toNode":"a1db9aa14bab42eb","toSide":"top"}
+	]
+}

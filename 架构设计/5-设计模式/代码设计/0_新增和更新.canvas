@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"5af33100cfbcc031","type":"text","text":"根据req.is_submit\nhandler","x":-597,"y":-220,"width":189,"height":60},
+		{"id":"2eaa00fe3ec0dbd8","type":"text","text":"save - 判断req.code\n构造聚合根(is_update_flag)\napp","x":-360,"y":-360,"width":340,"height":80},
+		{"id":"54d8f703e260b66b","type":"text","text":"存在code -> 更新, 删除, 全量\ndomain","x":120,"y":-460,"width":260,"height":60},
+		{"id":"0f05447f3b6c2a67","type":"text","text":"不存在code -> 新增\ndomain","x":120,"y":-280,"width":250,"height":60},
+		{"id":"2093a116e9e1a63e","type":"text","text":"存在code -> 更新, 删除, 全量\ndomain","x":120,"y":-120,"width":260,"height":60},
+		{"id":"b0b3d44b846cad95","type":"text","text":"submit - 判断req.code\n构造聚合根(is_update_flag)\napp","x":-360,"y":-90,"width":340,"height":80},
+		{"id":"6c5050b4707645d4","type":"text","text":"不存在code -> 新增\ndomain","x":120,"y":0,"width":250,"height":60},
+		{"id":"c1601a2d05b78534","type":"text","text":"SaveOrSubmit: 保存更新公用接口","x":-720,"y":-320,"width":300,"height":60,"color":"1"},
+		{"id":"ea59a5c711e03396","x":-360,"y":100,"width":250,"height":80,"type":"text","text":"save\n构造聚合根\napp"},
+		{"id":"c7c3ae6b51147606","type":"text","text":"Add - 根据req.is_submit\nhandler","x":-658,"y":200,"width":250,"height":60},
+		{"id":"5c21cef0672b59d0","x":-360,"y":280,"width":250,"height":80,"type":"text","text":"submit\n构造聚合根\napp"},
+		{"id":"b7cabb40ae733ba7","x":120,"y":190,"width":250,"height":80,"type":"text","text":"SaveOrSubmit flag\n保存提交处理\ndomain"},
+		{"id":"bec1901638df4f4c","x":-720,"y":70,"width":300,"height":60,"color":"3","type":"text","text":"add & update: 分开接口"},
+		{"id":"2dcd6c7e20b96833","type":"text","text":"save\n构造聚合根\napp","x":-360,"y":450,"width":250,"height":80},
+		{"id":"9403ad299f04624b","type":"text","text":"submit\n构造聚合根\napp","x":-360,"y":630,"width":250,"height":80},
+		{"id":"04f41ba063dad1f9","type":"text","text":"SaveOrSubmit flag\n保存提交处理\ndomain","x":120,"y":540,"width":250,"height":80},
+		{"id":"e11f16b037800ccf","type":"text","text":"Update - 根据req.is_submit\nhandler","x":-685,"y":550,"width":277,"height":60}
+	],
+	"edges":[
+		{"id":"9bbf567657ed1426","fromNode":"5af33100cfbcc031","fromSide":"right","toNode":"2eaa00fe3ec0dbd8","toSide":"left"},
+		{"id":"83b7ebd74a548229","fromNode":"2eaa00fe3ec0dbd8","fromSide":"right","toNode":"54d8f703e260b66b","toSide":"left"},
+		{"id":"7dc5b340c2b764f0","fromNode":"2eaa00fe3ec0dbd8","fromSide":"right","toNode":"0f05447f3b6c2a67","toSide":"left"},
+		{"id":"44ced6f6a09f4b73","fromNode":"5af33100cfbcc031","fromSide":"right","toNode":"b0b3d44b846cad95","toSide":"left"},
+		{"id":"62ec3f171ed1cc95","fromNode":"b0b3d44b846cad95","fromSide":"right","toNode":"2093a116e9e1a63e","toSide":"left"},
+		{"id":"5bef6e8b147f2400","fromNode":"b0b3d44b846cad95","fromSide":"right","toNode":"6c5050b4707645d4","toSide":"left"},
+		{"id":"d9110e6de9a4d644","fromNode":"c7c3ae6b51147606","fromSide":"right","toNode":"ea59a5c711e03396","toSide":"left"},
+		{"id":"3ce8da7d4d5260d6","fromNode":"c7c3ae6b51147606","fromSide":"right","toNode":"5c21cef0672b59d0","toSide":"left"},
+		{"id":"7e08bef17e86b932","fromNode":"ea59a5c711e03396","fromSide":"right","toNode":"b7cabb40ae733ba7","toSide":"left"},
+		{"id":"2a0f4047b498e059","fromNode":"5c21cef0672b59d0","fromSide":"right","toNode":"b7cabb40ae733ba7","toSide":"left"},
+		{"id":"2f51900fc3c50e3b","fromNode":"2dcd6c7e20b96833","fromSide":"right","toNode":"04f41ba063dad1f9","toSide":"left"},
+		{"id":"bf5d872a45dbd800","fromNode":"9403ad299f04624b","fromSide":"right","toNode":"04f41ba063dad1f9","toSide":"left"},
+		{"id":"80d466ebd3dd1f5c","fromNode":"e11f16b037800ccf","fromSide":"right","toNode":"2dcd6c7e20b96833","toSide":"left"},
+		{"id":"d1b424375d270546","fromNode":"e11f16b037800ccf","fromSide":"right","toNode":"9403ad299f04624b","toSide":"left"}
+	]
+}

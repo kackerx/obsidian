@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"76bbc3a764f7c210","x":-700,"y":-440,"width":519,"height":286,"type":"text","text":"## 时间序列数据\n\n```ad-example\n如一个设备, 在某个时间点或某个时间段的具体值以及聚合值\n```\n\n- 使用hash, 没法范围查询\n- 使用zset, score为时间戳, zrangebyscore查询"}
+	],
+	"edges":[]
+}

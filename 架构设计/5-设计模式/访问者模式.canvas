@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"c0c0d8ee45c4da5c","x":-660,"y":-380,"width":757,"height":521,"type":"text","text":"## 访问者模式\n\n```ad-tips\n一个或多个操作, 应用到同一组对象上, 解耦操作和对象本身\n```\n\n![[Pasted image 20230325220636.png]]\n\n"}
+	],
+	"edges":[]
+}

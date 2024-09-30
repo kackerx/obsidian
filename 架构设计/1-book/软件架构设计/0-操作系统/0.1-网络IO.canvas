@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"74ebe1315118009f","x":-580,"y":-480,"width":640,"height":300,"type":"text","text":"## 网络IO误区\n\n- 认为非阻塞io和异步io是同一个概念\n- select, poll, epoll这类多路复用就是异步io\n- 存在异步阻塞io(实际没有)"},
+		{"id":"755b3a4d4ed5866f","x":-580,"y":-140,"width":640,"height":480,"type":"text","text":"## io模型\n\n- 同步阻塞: 阻塞式的read和write\n- 同步非阻塞: 立即返回, 应用主动不断轮询\n- 多路复用: 一次把全部的fd传入select函数, 当有fd可读或可写, 函数返回, 应用主动调用read或write\n- 异步io: 通过回调函数, 系统来通知完成后去执行callback\n\n```ad-tips\n阻塞和非阻塞: 从函数调用角度来说, 是否立即返回\n同步和异步: 从读写是谁完成的角度来说, 同步读写是应用层, 异步读写是os完成后回调通知应用\n\n\n所以不存在说异步阻塞io, 并且多路复用的select也是同步并且阻塞的调用\n```"},
+		{"id":"f5029731cba0a9d0","x":100,"y":-480,"width":760,"height":300,"type":"text","text":"## Reactor & Proactor\n\n### Reactor\n主动模式, 应用不断轮询os或者网络框架io是否就绪, 实际的io操作是应用层执行\n\n### Proactor\n被动模式, 应用把read和write函数操作交给os或者网络框架, 实际的io由他们执行, 之后回调应用程序"}
+	],
+	"edges":[]
+}

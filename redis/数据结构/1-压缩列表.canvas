@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 数据结构\n![[Pasted image 20230323184324.png]]\n- 基于压缩了列表实现了<mark class=\"hltr-pink\">List</mark>, <mark class=\"hltr-red\">Hash</mark>, <mark class=\"hltr-orange\">Sorted Set</mark>\n- hash-max-ziplist-entries：表⽰⽤压缩列表保存时哈希集合中的最⼤元素个数。 \n- hash-max-ziplist-value：表⽰⽤压缩列表保存时哈希集合中单个元素的最⼤⻓度。\n- 否则就会转为使用哈希表","id":"e7d8f7e187a71c3a","x":-700,"y":-380,"width":680,"height":620}
+	],
+	"edges":[]
+}

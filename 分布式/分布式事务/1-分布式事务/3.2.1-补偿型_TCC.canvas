@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 补偿型\n```ad-tips\n补偿型事务大致有<mark class=\"hltr-pink\">TCC</mark>和<mark class=\"hltr-pink\">Saga</mark>两种细分方案\n```","id":"73806eaff331e4a5","x":-840,"y":-480,"width":657,"height":200},
+		{"type":"text","text":"## TCC\n\n```ad-tips\nTCC事务模型包括三部分\n- 主业务服务: 业务的发起方, 服务的编排者\n- 从业务服务: 业务的参与方, 负责提供TCC业务操作, 供主业务服务调用\n- 业务活动管理器: 维护记录TCC全局事务的事务状态和每个从业务服务的子事务状态, 在提交是调用所有从业务的<mark class=\"hltr-pink\">confirm</mark>, 取消时调用从业务的<mark class=\"hltr-pink\">cancel</mark>\n\n通过对业务逻辑层面上的分解, 来代替rm对dtp的支持, 根据主业务的执行来决定是执行confirm还是cancel\n```\n\n![[Pasted image 20230331180808.png]]\n- Try: 调用Try接口, 尝试执行业务, 完成业务检查, 预留业务资源\n- Confirm: 确认执行业务操作, 不做检查, 只使用Try阶段预留的业务资源\n- Cancel: 需要回滚, 释放预留资源\n- Confirm和Cacel满足幂等性, 允许失败重试, TCC会添加事务日志, CC阶段出错需重试, 重试失败人工介入处理","id":"23d45eb6f20a152d","x":-140,"y":-480,"width":1180,"height":880},
+		{"type":"text","text":"## TCC案例\n\n- 订单服务创建订单\n- t: rpc现金服务, 冻结客户资金\n- c: 提交订单成功, rpc现金服务, 扣除客户冻结资金\n- c: 提交订单失败, rpc现金服务, 撤销冻结的资金\n\n\n## ov\n\n```ad-tips\n相比强一致性的XA/2PC来说, TCC是一种补偿机制, 不是强制加锁, 属于最终一致\n```","id":"36a5b290c524a77e","x":-840,"y":-240,"width":657,"height":640}
+	],
+	"edges":[]
+}

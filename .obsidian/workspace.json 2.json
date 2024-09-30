@@ -1,0 +1,630 @@
+{
+  "main": {
+    "id": "9f6c5075433598b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "dbd1debe68527a3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b50399db38a426a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/19.3.0-ltcode_linkedlist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2b05cec5a51e987",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e91feec6975a142a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/2-数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ca9088f192c831c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66bd7a8a6228e3cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/2-数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2119ff94c9ec607",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/组件结构/0_组件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1e374c9cb41e3318",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1b644fc0baff9dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/2-数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c909bb022713453",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/组件结构/consumer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d381df7443d0f7bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/组件结构/partition.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b4087fb3f5bc278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/组件结构/producer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "555d08a3ccde953b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/0_kafka.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4abebaa196d20d34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/面试QA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98f5a7150db9aa2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6389321ddf2b81ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/2-数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ae70ce6a81cfc86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/0-搜索.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f597633b3bad26e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/19.1.0-sort.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3038ab4b813fae46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/6-栈和队列.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0322dc8c9dce340b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/5-动态规划.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3c022f79038b90e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/7-BFS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c3e879f1ffe8857b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/19.2.0-search.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dfb88da41f9c91a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/5-微服务.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7288a78dbb880b72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/19.0.5-struct_tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1ea7c9e68128d875",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.1-面试/3-消息队列.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a68093a6d8e7099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.1-面试/2-缓存.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b2206917c098e38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/19.0.0-struct_array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "469ae9bfce1240de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be7453a4910ecda6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "编程志异/杂谈/cards.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 16
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ad3cc34da312a49",
+    "type": "split",
+    "children": [
+      {
+        "id": "b12de4fef7fba36e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fbc2d12e1a6bcd0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "24b9a70b3af3b2b0",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "6795d50f0cc1e198",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "189369f114ff3278",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 335,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6e721b532b6285c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc2e65da05e7aab2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54e26e578d3af8e9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "06d51caa70156e30",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "0-all_in_one/19.1.0-sort.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0750737421162972,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "96d31aad2bf631c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Entrypoint",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7dda654b23dfd22c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ac6a260c6aeeaae3",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dafe918dded9e30",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "5b40de8b5feacb85",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "d8fc34f23a383d12",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "0-all_in_one/19.1.0-sort.md"
+              }
+            }
+          },
+          {
+            "id": "8b178046ef970a18",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "0-all_in_one/19.1.0-sort.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f2c63c118130d172",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "0-all_in_one/19.1.0-sort.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 408.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-spaced-repetition:复习卡片": false,
+      "omnisearch:Omnisearch": false,
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "privacy-glasses:Hide all": false,
+      "privacy-glasses:Reveal non-private": false,
+      "privacy-glasses:Reveal all": false
+    }
+  },
+  "active": "f597633b3bad26e2",
+  "lastOpenFiles": [
+    "0-asset/Pasted image 20240914103615.png",
+    "0-asset/Pasted image 20240914103448.png",
+    "0-all_in_one/19.2.0-search.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/7-BFS.md",
+    "0-asset/Pasted image 20240913233259.png",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/3-二叉树.md",
+    "0-asset/Pasted image 20240913215918.png",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/0-搜索.md",
+    "0-all_in_one/0.1-面试/4-ES.md",
+    "0-asset/Pasted image 20240913182247.png",
+    "0-asset/Pasted image 20240913184832.png",
+    "0-asset/Pasted image 20240913185038.png",
+    "0-asset/Pasted image 20240913185311.png",
+    "0-all_in_one/0.1-面试/5-MongoDB.md",
+    "0-asset/Pasted image 20240913180527.png",
+    "0-asset/Pasted image 20240913185037.png",
+    "0-asset/Pasted image 20240913182918.png",
+    "0-all_in_one/0.1-面试/2-缓存.md",
+    "0-all_in_one/0.1-面试/3-消息队列.md",
+    "0-all_in_one/19.0.5-struct_tree.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/5-动态规划.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/6-栈和队列.md",
+    "0-all_in_one/0.1-面试/4-NoSQL.md",
+    "0-all_in_one/0.1-面试/未命名.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/4-回溯.md",
+    "0-all_in_one/0.0-记忆/5-微服务.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/2-数组.md",
+    "0-all_in_one/19.5.4-go.md",
+    "0-all_in_one/19.5.3-go.md",
+    "0-all_in_one/19.5.3-LRU 1.md",
+    "0-all_in_one/19.0.0-struct_array.md",
+    "0-all_in_one/19.1.0-sort.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode/1-链表.md",
+    "编程志异/杂谈/cards.md",
+    "0-all_in_one/0.0-记忆/1-hotleetcode",
+    "0-all_in_one/19.3.0-ltcode_linkedlist.md",
+    "0-all_in_one/0.1-面试/1-数据库.md",
+    "0-all_in_one/0.1-面试",
+    "0-all_in_one/0.0-记忆",
+    "0-all_in_one",
+    "编程志异/0_one/0.0-记忆",
+    "编程志异/0_one/0-记忆",
+    "msyql/3-锁/1.1_锁.canvas",
+    "编程志异/1_开源项目",
+    "编程志异/0_one",
+    "msyql/0-数据结构/1-buffer_pool和表空间.canvas",
+    "msyql/0-数据结构/4-索引演进.canvas",
+    "分布式/分布式事务/1-分布式事务/3.2.1-补偿型_TCC.canvas",
+    "redis/4-一致性.canvas",
+    "分布式/分布式事务/1-分布式事务/2.1-强一致_XA.canvas",
+    "分布式/分布式事务/1-分布式事务/2.2-强一致_seata.AT.canvas",
+    "分布式/分布式事务/0-事务分类图解.canvas",
+    "架构设计/1-book/Go With The Domain",
+    "分布式/分布式事务/1-关键名词.canvas",
+    "分布式/分布式事务/1-分布式事务/3.1.2-通知型_最大努力通知.canvas",
+    "架构设计/9-DDD/落地DDD"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"type":"text","text":"### flush链表\n- buffer pool中只被查询的数据是干净的, 但是更新的数据和磁盘不一样, 其数据页属于脏页, 会被io线程随机刷新到磁盘\n- 哪些是脏页有一个flush链表链接","id":"9ec295087ba1300a","x":-720,"y":-40,"width":640,"height":480},
+		{"type":"text","text":"### 表空间\n- 用户创建的表都是对应了磁盘上的xx.ibd数据文件\n- 一个表空间有多组<mark class=\"hltr-pink\">数据区</mark>(extent)\n- 一组数据区是256个数据区(extent)\n- 一个数据区是64个<mark class=\"hltr-pink\">数据页</mark>\n- 每个数据页是16kb, 所以一个数据区是1mb\n\n![[Pasted image 20230321145219.png|555]]","id":"38fbcc89ef3164e4","x":-20,"y":-560,"width":720,"height":1000},
+		{"type":"text","text":"### free链表\n- Buffer pool每次加载16k的数据页, 即是说buffer pool中是一个个的缓存页\n- 磁盘上是数据页, 加载进bp就成了缓存页\n![[Pasted image 20230320183321.png]]\n- buffer pool存的有缓存页, 缓存页对应的描述数据(metadata), \n- <mark class=\"hltr-pink\">空闲的缓存页</mark>的描述数据之间用双向链表free链表链接\n- 数据页有没有被缓存, 从数据页的哈希表获取, 如果哈希表查不到就会从free链表找到一个空闲的描述数据从而找到对应的缓存页从磁盘加载","id":"bf6ebc1fbe70fca2","x":-720,"y":-560,"width":640,"height":500}
+	],
+	"edges":[]
+}

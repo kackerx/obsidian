@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## Seata-At\n\n```ad-tips\nAutomatic Branch Transaction Mode(自动化分支事务), 增强型的二阶段提交实现\n- TC: 事务的协调者, 负责事务ID的生成, 事务注册, 提交, 回滚, 服务端\n- TM: 事务的发起者, 定义事务的边界, 告知TC事务的开始, 提交, 回滚\n- RM: 资源的管理者, 每个RM都会作为一个分支事务注册在TC\n\n<mark class=\"hltr-pink\">TM和RM是业务耦合代码, TC是独立的服务, 被注册和发现</mark>\n```\n\n![[Pasted image 20230403110832.png]]","id":"f324c19ac879f568","x":-680,"y":-420,"width":700,"height":760},
+		{"type":"text","text":"## ov\n- 和2PC相比, 2PC是等待事务管理者TM通知是提交还是回滚, 发生网络调用等的问题\n- 而AT不同RM的本地事务率先直接提交, 但是记录redo/undo log, 后续决定是删除日志还是回滚\n- undo用来回滚, redo用于校验(本地提交到通知回滚这段时间里)是否被本地的其他事务也修改了(因为本地事务修改的话会加锁)\n- 如果redo判断数据未被其他事务修改, 直接回滚, 脏数据根据不同策略处理\n\n## at的二阶段\n\n```ad-tips\ntitle: 一阶段\n业务数据和回滚日志记录在同一本地事务中提交, 释放本地锁和连接资源, <mark class=\"hltr-pink\">如左图</mark>\n```\n\n```ad-note\ntitle: 二阶段\n\n- 提交异步化\n- 或回滚 -> 通过一阶段的回滚日志进行反向补偿\n```\n\n","id":"607acdf9d6378813","x":60,"y":-420,"width":740,"height":760},
+		{"type":"text","text":"","id":"ab39c77c9eda7947","x":-1260,"y":-420,"width":250,"height":60},
+		{"id":"6ecf6207604da731","x":840,"y":-420,"width":820,"height":760,"type":"text","text":"## ex\n![[Pasted image 20230413174705.png]]\n- 注册全局事务, 获取XID\n- repo和order本地事务执行到待commit阶段, 记录undo\n- repo和order注册分支事务并提交本地事务\n- 向Seata汇报提交状态, Seata汇总决定提交还是补偿回滚"}
+	],
+	"edges":[]
+}

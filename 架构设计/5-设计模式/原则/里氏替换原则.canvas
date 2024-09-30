@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"791f7cb99201ab82","x":-559,"y":-318,"width":499,"height":438,"type":"text","text":"## ov\n![[Pasted image 20230308231231.png]]\n- billing的行为不依赖任何一个子类, 实习类都可以替换"}
+	],
+	"edges":[]
+}

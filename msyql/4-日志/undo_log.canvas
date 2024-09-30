@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 数据更新流程\n![[Pasted image 20230305224706.png]]\n\n### 一条undo log的结构\n![[Pasted image 20230321160939.png]]","id":"95414e8860295155","x":-1080,"y":-520,"width":580,"height":540},
+		{"type":"text","text":"- InnoDB的逻辑日志, 用于事务的回滚和展示旧版本\n- 对任何数据的更新, 都先写undo log","id":"0e2ef45ab5b19db8","x":-927,"y":-660,"width":427,"height":80,"color":"1"},
+		{"type":"text","text":"## ov\n![[Pasted image 20230313163634.png|555]]\n- 回滚日志链, 使得每一个操作都可以溯源回滚\n- 实现了事务的隔离级别\n- 系统里没有比这个回滚日志更早的read-view的时候扇出undo-log","id":"7d44102967a71271","x":-440,"y":-660,"width":720,"height":680}
+	],
+	"edges":[]
+}

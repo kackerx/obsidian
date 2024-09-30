@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 当前读\n- 对于左侧可见性来说, 只是读的操作, 如果是写操作, 还是要在最新值上去做的\n- 更新数据都是先读, 后写, 这个读只能读当前值(current read)\n- <mark class=\"hltr-pink\">update语句</mark>和<mark class=\"hltr-red\">select加锁</mark>, 都是当前读\n- 如果这个update时, 其他事务未commit, 会阻塞等待其他事务释放锁\n\n\n<mark class=\"hltr-green\">当前读就是加锁和写入时读取最新记录</mark>","id":"ffe0a838cddf9dfe","x":340,"y":-840,"width":640,"height":380},
+		{"type":"text","text":"## ov\n- 事务启动, 每row有一个引擎系统递增的tx_id, 哪个事务操作row就讲tx_id赋值\n- 以事务启动时刻为准, tx_id在此事务之后的版本不认, 之前的事务和自己的认\n- 事务启动时刻, 当前begin但未commit的会有一个数组, 保存当前活跃tx_id\n- 这个数组的最小值(低水位), 最大值(高水位)构成了一致性read-view\n\n## 判断\n- 如果row的tx_id落在绿色段, 说明已提交, 或者本事务的操作, 可见\n- 如果row的tx_id落在红色段, 说明是将来启动的事务, 不可见\n- 如果落到黄色部分\n\t- 如果row的tx_id在数组中, 说明是活跃的事务, 还未提交, 不可见\n\t- 如果不在tx_ids数据中, 说明是已提交的事务, 可见","id":"77bc6a2e1e96c04d","x":340,"y":-425,"width":640,"height":380},
+		{"type":"file","file":"0-asset/Pasted image 20230314145422.png","id":"82ce2d2f80de8455","x":-203,"y":-840,"width":507,"height":380},
+		{"type":"file","file":"0-asset/Pasted image 20230314145845.png","id":"2d2e016a560cbafa","x":-203,"y":-425,"width":507,"height":380},
+		{"type":"text","text":"### 读已提交\n- 每次读取时重新生成read-view\n\t- 对于已经提交的大于自身的事务, 读取时重新生成的read-view中活跃事务集合不包含未来已提交事务, 可见\n\n### 可重复读\n- 开启事务时刻生成read-view, 保证整个事务执行过程中都是复用开启时刻的可见性, 避免了不可重复度和幻读的问题","id":"57bb2232437cc762","x":-203,"y":-20,"width":863,"height":220}
+	],
+	"edges":[]
+}

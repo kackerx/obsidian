@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 直接IO和缓冲IO\n![[Pasted image 20230406111058.png]]\n- cpu和内存之间有一层cache\n- 内存和磁盘之间有page cache\n- 无论缓冲io还是直接io, 未调用<mark class=\"hltr-pink\">fsync</mark>都不是最终落盘\n- fsync是直接io的api, 直接刷盘, fflush是缓冲io的api, 刷到内核缓冲区","id":"b202241bc36da7e9","x":-600,"y":-460,"width":780,"height":540},
+		{"id":"8a4fc8da12d43936","x":-600,"y":120,"width":780,"height":380,"type":"text","text":"## 内存映射文件\n![[Pasted image 20230406112526.png]]\n- 对于直接io, 不需要发生数据的拷贝, 用户空间的内存地址是映射的内核的真实物理地址, 简直拷贝"},
+		{"id":"87fb793c7832224b","x":240,"y":-460,"width":780,"height":960,"type":"text","text":"## 零拷贝\n![[Pasted image 20230406112818.png]]\n- 上图直接io, 程序数据 <- 磁盘, 程序数据 -> socket缓冲区\n\n![[Pasted image 20230406113116.png]]\n- 对于零拷贝, socket缓冲区也映射内核缓冲区的内存地址, 网卡驱动表面是读socket, 实则直接读内核"}
+	],
+	"edges":[]
+}

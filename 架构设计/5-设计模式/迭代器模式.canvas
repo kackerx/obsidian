@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"dd7fb6d97963c4ba","x":-700,"y":-419,"width":522,"height":259,"type":"file","file":"0-asset/Pasted image 20230315104305.png"},
+		{"id":"599aadb7e4e83884","x":-700,"y":-100,"width":522,"height":287,"type":"file","file":"0-asset/Pasted image 20230315104945.png"},
+		{"id":"753a4421f75e99fb","x":-120,"y":-419,"width":780,"height":606,"type":"text","text":"## ov\n- 主要目的是解耦 -> 容器代码和遍历代码\n- 容器类实现容器接口, 接口包含iterator方法, 返回一个迭代器\n- 迭代器实现迭代器接口包含hasNext(), next(), next方法返回当前值并移动下标"}
+	],
+	"edges":[]
+}

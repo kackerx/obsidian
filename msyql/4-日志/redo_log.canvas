@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"type":"group","id":"67ff41e23e673bdf","x":-620,"y":300,"width":1214,"height":440,"label":"innodb_flush_log_at_trx_commit"},
+		{"type":"text","text":"### ov\n- 黑板(日志) & 账本(磁盘)\n- 孔乙己中老板把赊账和还账的记录, 先记录到黑板上(日志)并同步内存, 省的翻账本浪费时间\n- 等打烊后, 从黑板上同步到账本中, <mark class=\"hltr-pink\">redo就是黑板</mark>\n- redo-log顺序写性能是很高的, 而且可能只追加一点字符, 磁盘刷入数据页16k很大且随机读写性能差\n\n### log\n- wpos是日志写入点, checkpoint是擦除点\n- wpos追上checkpoint说明配置的日志文件满了, 需要停止写入, 记录到磁盘, 推进下checkpoint的位置\n\n### crash-safe\n- 事务提交前(io线程还未将数据页flush到磁盘)数据库宕机依旧可以通过log恢复\n\n### 区别\n- redo是物理日志, Innodb特有, 记录某个数据页做了什么修改\n- binlog是逻辑日志, Server的, 记录某id=1的一行加了1\n\n### one row\n日志类型 -> 表空间id -> 数据页号 -> 数据页偏移量 -> 具体修改的数据","id":"0b91645c9269a371","x":-180,"y":-320,"width":780,"height":560},
+		{"type":"text","text":"## ov\n- InnoDB的物理日志, 记录数据页的变化\n- WAL技术(write ahead logging), <mark class=\"hltr-red\">日志先于数据</mark>, 记录redo视为数据已更新\n- 内存中的更新后写redo, 最后写入硬盘后删除","id":"b82b3cf0948f8c48","x":-620,"y":-320,"width":400,"height":160},
+		{"type":"file","file":"0-asset/Pasted image 20230305224448.png","id":"3514ae551f5a006b","x":-614,"y":-120,"width":389,"height":360},
+		{"type":"text","text":"### 写入语句的执行过程\n- 加载缓存数据到内存的Buffer Pool\n- 写入undo日志文件, 用于回滚和MVCC\n- 更新Buffer Pool的内存数据\n- 写入redo日志的redo log buffer内存\n- redo log写入磁盘","id":"f592b6f4af56b80b","x":-586,"y":320,"width":361,"height":180},
+		{"type":"text","text":"0: 提交事务不把redo log写入磁盘, 修改完提交前宕机, 数据丢失\n\n1: 提交事务必须写入到磁盘的redo log, 只要事务提交成功意味着redo log必然在磁盘中\n\n2: 提交事务, redo log写入到磁盘对应的内存cache中, 不是直接进入磁盘文件可能1s后才会入盘","id":"f1a9f8bbc9b29ea0","x":-586,"y":520,"width":361,"height":200},
+		{"type":"file","file":"0-asset/Pasted image 20230320171012.png","id":"3466a350b38c63ae","x":-180,"y":328,"width":732,"height":352}
+	],
+	"edges":[]
+}

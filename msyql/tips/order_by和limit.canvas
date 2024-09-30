@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"## 优化\n- order字段有索引, 条件和输出均在上述索引中, 索引覆盖\n- 会跳过中间表的生成","id":"1980274a8b0ea6f7","x":-720,"y":-100,"width":554,"height":180},
+		{"type":"text","text":"## order原理\n- where等条件查询\n- 中间结果放入sort_buffer\n\t- 大于sort_buffer_size时在硬盘排序, 否则内存\n- 对该结果集按order字段排序\n- 回表生成完整结果集","id":"aa009cce71c5a5a5","x":-720,"y":-400,"width":554,"height":260},
+		{"type":"text","text":"## limit\n- select title, la from film order by title <mark class=\"hltr-red\">limit 100, 10</mark>\n- 只需要10条数据, 但是order使用了全表数据排序, 丢弃了很多前面的row\n","id":"b524ab1d45c9b170","x":-120,"y":-400,"width":620,"height":260},
+		{"id":"abc3e501979d29f6","x":-120,"y":-100,"width":620,"height":180,"type":"text","text":"## 优化\n- 优化 -> 让sort索引覆盖, 不需要回表了\n- 优化 -> 先得到数据的id, 根据in id得到结果集"}
+	],
+	"edges":[]
+}

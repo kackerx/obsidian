@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"46448e1dc90332be","x":-467,"y":-373,"width":281,"height":50,"type":"text","text":"需求行, 『需求-结算』, 明细1:1\n只有无验收预付"},
+		{"id":"fda21fea626c0d84","x":-159,"y":-373,"width":179,"height":50,"type":"text","text":"纯物料M, 明细1:1"},
+		{"id":"3440c9e3f97e3f5b","x":64,"y":-373,"width":276,"height":50,"type":"text","text":"采购单PO, 根据验收行&退货行1:N"},
+		{"id":"a6b24c899cf2857b","x":-344,"y":76,"width":219,"height":60,"color":"5","type":"text","text":"无验收预付单, 明细1:1\n"},
+		{"id":"b264e4bacf2a6f6e","x":20,"y":76,"width":320,"height":50,"color":"5","type":"text","text":"有验收后付单, 明细==验收行&退货行==1:N\n"},
+		{"id":"bf658629805224e0","x":-148,"y":-80,"width":175,"height":50,"color":"6","type":"text","text":"采购单PO有无验收?"},
+		{"id":"2f5f533609dd1516","x":-186,"y":224,"width":316,"height":60,"type":"text","text":"流入FSSC, 通过fssc_task生成如下单据"},
+		{"id":"f29f345ef525113a","x":-561,"y":361,"width":250,"height":60,"color":"4","type":"text","text":"无验收预付单 -> 预付单"},
+		{"id":"f8cbc11f9f1294c6","x":290,"y":361,"width":250,"height":60,"color":"4","type":"text","text":"有验收后付单 -> 结算单"},
+		{"id":"68ceff0800819a4d","x":-163,"y":-198,"width":206,"height":50,"color":"1","type":"text","text":"付款申请单据pc_order"},
+		{"id":"07b8d72fc158d0bf","x":290,"y":211,"width":389,"height":147,"type":"file","file":"0-asset/针对有验收后付本质是针对订单下验收单和退货单的付款.png"}
+	],
+	"edges":[
+		{"id":"0ef0101077cf6e0b","fromNode":"46448e1dc90332be","fromSide":"bottom","toNode":"68ceff0800819a4d","toSide":"top"},
+		{"id":"bd79faffb2eded03","fromNode":"fda21fea626c0d84","fromSide":"bottom","toNode":"68ceff0800819a4d","toSide":"top"},
+		{"id":"122b89b1647b535a","fromNode":"3440c9e3f97e3f5b","fromSide":"bottom","toNode":"68ceff0800819a4d","toSide":"top"},
+		{"id":"26236994b928d7c9","fromNode":"68ceff0800819a4d","fromSide":"bottom","toNode":"bf658629805224e0","toSide":"top"},
+		{"id":"9199e0b935a7ac4c","fromNode":"bf658629805224e0","fromSide":"bottom","toNode":"a6b24c899cf2857b","toSide":"top"},
+		{"id":"97778d7d28eb9236","fromNode":"bf658629805224e0","fromSide":"bottom","toNode":"b264e4bacf2a6f6e","toSide":"top"},
+		{"id":"53f95784db4d9c42","fromNode":"a6b24c899cf2857b","fromSide":"bottom","toNode":"2f5f533609dd1516","toSide":"top"},
+		{"id":"953dfce868a0f0f1","fromNode":"b264e4bacf2a6f6e","fromSide":"bottom","toNode":"2f5f533609dd1516","toSide":"top"},
+		{"id":"403583e92c9ce5e0","fromNode":"2f5f533609dd1516","fromSide":"bottom","toNode":"f29f345ef525113a","toSide":"bottom"},
+		{"id":"96b26af6b55b8a18","fromNode":"2f5f533609dd1516","fromSide":"bottom","toNode":"f8cbc11f9f1294c6","toSide":"bottom"}
+	]
+}
